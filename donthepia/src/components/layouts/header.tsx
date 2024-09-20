@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useLayoutEffect, useState } from "react";
+import { useCallback, useEffect, useState, useLayoutEffect } from "react";
 
 import Container from "../common/container";
 import Menu from "./menu";
@@ -11,22 +11,22 @@ import { NAVIGATION } from "./navigation";
 
 export default function Header() {
   const pathname = usePathname();
-  // const [isStickyHeader, setStickyHeader] = useState(false);
+  const [isStickyHeader, setStickyHeader] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // useLayoutEffect(() => {
-  //   if (window.scrollY > 0) {
-  //     setStickyHeader(true);
-  //   }
-  //   document.addEventListener("scroll", () => {
-  //     if (window.scrollY > 0) {
-  //       setStickyHeader(true);
-  //     } else {
-  //       setStickyHeader(false);
-  //     }
-  //   });
-  //   return () => document.removeEventListener("scroll", () => {});
-  // }, []);
+  useLayoutEffect(() => {
+    if (window.scrollY > 0) {
+      setStickyHeader(true);
+    }
+    document.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setStickyHeader(true);
+      } else {
+        setStickyHeader(false);
+      }
+    });
+    return () => document.removeEventListener("scroll", () => {});
+  }, []);
 
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -49,13 +49,14 @@ export default function Header() {
 
   return (
     <header
-      className={clsx(
-        "inset-x-0 top-0 z-50 transition-colors duration-200 bg-black"
-      )}
+      className={clsx("inset-x-0 top-0 z-50 transition-colors duration-200 ", {
+        "fixed bg-black": isStickyHeader || mobileMenuOpen,
+        absolute: !isStickyHeader && !mobileMenuOpen,
+      })}
     >
       <Container>
         <nav
-          className="flex items-center justify-between py-8"
+          className="flex items-center justify-between py-6"
           aria-label="Global"
         >
           <Link className="hidden md:block" href="/">
