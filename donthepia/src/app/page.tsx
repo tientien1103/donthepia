@@ -5,14 +5,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black w-full">
-      <section className="bg-[url(/home/home-banner.webp)] bg-contain 3xl:bg-center bg-top bg-no-repeat h-[1080px]">
+      <section className="bg-[url(/home/home-banner.webp)] bg-contain bg-top bg-no-repeat h-[1080px]">
         <Container className="relative">
           <div className="flex items-center justify-center">
             <h1 className="text-white text-3xl font-semibold text-center absolute 3xl:top-[530px] top-[430px]">
               Donthepia <br /> NFT <br />
               Land
             </h1>
-            <div className="absolute 3xl:left-[155px] 3xl:top-[200px] left-[240px] top-[130px]">
+            <div className="absolute 3xl:left-[340px] 3xl:top-[200px] left-[250px] top-[150px]">
               <p className="text-xl text-white text-center font-normal">
                 Donthepia
               </p>
@@ -20,9 +20,9 @@ export default function Home() {
                 Shopping mall
               </p>
             </div>
-            <hr className="border-dotted border-white w-[129px] rotate-45 absolute 3xl:left-[220px] 3xl:top-[320px]  left-[300px] top-[240px]" />
+            <hr className="border-dotted border-white w-[129px] rotate-45 absolute 3xl:left-[400px] 3xl:top-[320px] left-[310px] top-[270px]" />
 
-            <div className="absolute 3xl:left-44 3xl:top-[780px] left-[520px] top-[710px]">
+            <div className="absolute 3xl:left-[360px] 3xl:top-[780px] left-[230px] top-[670px]">
               <p className="text-xl text-white text-center font-normal">
                 Donthepia
               </p>
@@ -30,9 +30,9 @@ export default function Home() {
                 Entrance
               </p>
             </div>
-            <hr className="border-dotted border-white w-[211px] -rotate-45 absolute 3xl:left-[210px] 3xl:top-[690px] right-[390px] top-[630px]" />
+            <hr className="border-dotted border-white w-[211px] -rotate-45 absolute 3xl:left-[390px] 3xl:top-[690px] left-[260px] top-[580px]" />
 
-            <div className="absolute 3xl:right-[430px] 3xl:top-[870px] right-[240px] top-[640px]">
+            <div className="absolute 3xl:right-[630px] 3xl:top-[840px] right-[520px] top-[680px]">
               <p className="text-xl text-white text-center font-normal">
                 Donthepia
               </p>
@@ -40,9 +40,9 @@ export default function Home() {
                 Game Land
               </p>
             </div>
-            <hr className="border-dotted border-white w-[211px] -rotate-45 absolute 3xl:right-[310px] 3xl:top-[780px] right-[270px] top-[560px]" />
+            <hr className="border-dotted border-white w-[211px] -rotate-45 absolute 3xl:right-[500px] 3xl:top-[760px] right-[400px] top-[600px]" />
 
-            <div className="absolute 3xl:right-[510px] 3xl:top-[260px] right-[530px] top-[170px]">
+            <div className="absolute 3xl:right-[650px] 3xl:top-[220px] right-[500px] top-[160px]">
               <p className="text-xl text-white text-center font-normal">
                 Donthepia
               </p>
@@ -50,9 +50,9 @@ export default function Home() {
                 Entertainment Town
               </p>
             </div>
-            <hr className="border-dotted border-white w-[172px] -rotate-45 absolute 3xl:right-[610px] 3xl:top-[390px] right-[620px] top-[290px]" />
+            <hr className="border-dotted border-white w-[230px] -rotate-45 absolute 3xl:right-[730px] 3xl:top-[370px] right-[570px] top-[280px]" />
 
-            <div className="absolute 3xl:right-[20px] 3xl:top-[350px] right-36 top-[240px]">
+            <div className="absolute right-[200px] 3xl:top-[350px] top-[240px]">
               <p className="text-xl text-white text-center font-normal">
                 Donthepia
               </p>
@@ -60,10 +60,10 @@ export default function Home() {
                 Node Land
               </p>
             </div>
-            <hr className="border-dotted border-white w-[120px] -rotate-45 absolute 3xl:right-[70px] 3xl:top-[460px] right-48 top-[350px]" />
+            <hr className="border-dotted border-white w-[120px] -rotate-45 absolute right-[250px] 3xl:top-[460px] top-[350px]" />
           </div>
 
-          <p className="uppercase text-5xl text-white text-center font-normal absolute 3xl:right-0 3xl:top-[910px] top-[680px] right-20">
+          <p className="uppercase text-5xl text-white text-center font-normal absolute right-40 3xl:top-[910px] top-[720px]">
             Donthepia <br />
             The Utopia
           </p>
@@ -72,21 +72,21 @@ export default function Home() {
 
       <section className="py-32">
         <Container>
-          <div className="grid grid-cols-11 space-x-3">
-            <div className="col-span-5">
-              <h3 className="text-white text-5xl leading-[80px]">
+          <div className="grid 3xl:grid-cols-4 grid-cols-9 space-x-3">
+            <div className="3xl:col-span-2 col-span-4 max-w-[839px]">
+              <h3 className="text-white 3xl:text-[64px] text-5xl leading-[80px]">
                 A digital adventure with Donthepia, The beginning <br /> of a
-                decentralized art That connects the world.
+                decentralized art <br /> That connects the world.
               </h3>
               <div className="flex flex-col items-center mt-20">
-                <p className="text-[#a1a1a1] flex flex-col text-xl">
+                <p className="text-[#a1a1a1] flex flex-col 3xl:text-xl text-lg">
                   돈키호테 유토피아에 오신 것을 환영합니다.
                   <br />
                   옛날 옛적, 돈키호테 유토피아 세계에 전염병이 발생하며 <br />
                   모든 곳이 중앙집권식으로 오염되고 말았습니다. <br />
                   이 오염된 세계에서 우리는 새로운 모험을 시작합니다.
                   <br />
-                  돈키호테는 크루즈를 타고 세계 데이터의 바다를 <br />{" "}
+                  돈키호테는 크루즈를 타고 세계 데이터의 바다를 <br />
                   항해합니다. 이 여정을 통해 분산화된 친구, 돈통 유저 <br />
                   서버노드를 모아 최후의 보물섬으로 떠나는 것, 이는 <br />
                   돈키호테의 여정이자 우리의 목표입니다. 이를 통해 <br />
@@ -99,8 +99,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-span-6">
-              <div className="flex flex-row gap-8">
+            <div className="3xl:col-span-2 col-span-5">
+              <div className="flex flex-row gap-12">
                 <Image
                   src="/home/img-about-01.webp"
                   alt="img-about-01"
@@ -121,8 +121,8 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-[url(/home/img-map.webp)] bg-contain h-[1080px] bg-no-repeat bg-top">
-        <Container className="relative flex flex-col gap-48">
+      <section className="bg-[url(/home/img-map.webp)] bg-contain h-[1080px] bg-no-repeat bg-top px-10">
+        <Container className="relative flex flex-col gap-[200px]">
           <h3 className="text-white text-6xl leading-[80px] text-center pt-16">
             Join the community to <br /> get even more benefits.
           </h3>
@@ -174,28 +174,32 @@ export default function Home() {
       </section>
 
       <section className="bg-[url(/home/bg-donq-nft.webp)] bg-contain h-[1220px] bg-no-repeat bg-top mt-20">
-        <Container>
-          <div className="flex flex-col gap-10 justify-end items-end">
-            <h3 className="text-white text-6xl leading-[80px]">
-              About the antipathy of <br />
-              DONQ NFT Nodes
-            </h3>
+        <Container className="grid grid-cols-2">
+          <div className="col-span-1">
+            <div className="flex flex-col gap-10 justify-end items-end">
+              <h3 className="text-white text-6xl leading-[80px]">
+                About the antipathy of <br />
+                DONQ NFT Nodes
+              </h3>
 
-            <p className="text-xl text-[#a1a1a1] max-w-[660px]">
-              DONQ NFT Node는 20번의 반감기가 있습니다. 반감기에는 DONQ NFT
-              NODE가 100ea ~ 500ea 생성될 때마다 DONQ가 자동소각됩니다. 탈중앙화
-              방식으로 DONQ 코인 가격은 시장 유동성에 의해서 자유롭게
-              결정됩니다.
-            </p>
+              <p className="text-xl text-[#a1a1a1] max-w-[660px]">
+                DONQ NFT Node는 20번의 반감기가 있습니다. 반감기에는 DONQ NFT
+                NODE가 100ea ~ 500ea 생성될 때마다 DONQ가 자동소각됩니다.
+                탈중앙화 방식으로 DONQ 코인 가격은 시장 유동성에 의해서 자유롭게
+                결정됩니다.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center mt-28">
-            <Image
-              src="/home/img-donq-nft.webp"
-              alt="img-donq-nft"
-              width={1040}
-              height={592}
-              className="object-contain"
-            />
+          <div className="col-span-2">
+            <div className="flex flex-col items-center justify-center mt-28">
+              <Image
+                src="/home/img-donq-nft.webp"
+                alt="img-donq-nft"
+                width={1040}
+                height={592}
+                className="object-contain"
+              />
+            </div>
           </div>
         </Container>
       </section>
@@ -244,7 +248,7 @@ export default function Home() {
             alt="img-eco-system-box"
             width={357}
             height={429}
-            className="object-contain absolute top-1/2 right-48"
+            className="object-contain absolute top-1/2 3xl:right-96 right-48"
           />
 
           <Image
@@ -252,10 +256,10 @@ export default function Home() {
             alt="ic-chart"
             width={80}
             height={80}
-            className="object-contain absolute top-[500px] right-[340px]"
+            className="object-contain absolute top-[500px] 3xl:right-[530px] right-[340px]"
           />
 
-          <div className="absolute top-[630px] right-[230px] text-center">
+          <div className="absolute top-[630px] 3xl:right-[420px] right-[230px] text-center">
             <p className="text-2xl text-black">T2E</p>
             <p className="text-base text-black">
               T2E Trading 은 코인 거래차트에 대한 <br /> 교육, 트레이더들의

@@ -8,6 +8,7 @@ import { useCallback, useEffect, useState, useLayoutEffect } from "react";
 import Container from "../common/container";
 import Menu from "./menu";
 import { NAVIGATION } from "./navigation";
+import Button from "../common/button";
 
 export default function Header() {
   const pathname = usePathname();
@@ -49,10 +50,14 @@ export default function Header() {
 
   return (
     <header
-      className={clsx("inset-x-0 top-0 z-50 transition-colors duration-200 ", {
-        "fixed bg-black": isStickyHeader || mobileMenuOpen,
-        absolute: !isStickyHeader && !mobileMenuOpen,
-      })}
+      className={clsx(
+        "block inset-x-0 top-0 z-50 transition-colors duration-200 ",
+        {
+          "fixed bg-black": isStickyHeader || mobileMenuOpen,
+          absolute: !isStickyHeader && !mobileMenuOpen,
+          hidden: pathname === "/main-dark",
+        }
+      )}
     >
       <Container>
         <nav
@@ -87,7 +92,7 @@ export default function Header() {
           <div className="flex">
             <ul
               className={clsx(
-                "hidden items-center md:gap-x-4 lg:gap-x-10 whitespace-nowrap text-white md:static md:flex md:h-auto md:flex-row md:bg-transparent md:px-0 md:pt-0",
+                "hidden items-center md:gap-x-4 lg:gap-x-16 whitespace-nowrap text-white md:static md:flex md:h-auto md:flex-row md:bg-transparent md:px-0 md:pt-0",
                 {
                   "absolute left-0 right-0 top-[54px] !flex h-screen flex-col bg-black px-4 pt-4":
                     mobileMenuOpen,
@@ -111,7 +116,6 @@ export default function Header() {
               })}
             </ul>
           </div>
-
           <div className="flex gap-2 md:gap-8">
             <Image
               src="/ic-language.webp"
@@ -120,18 +124,7 @@ export default function Header() {
               height={27}
               className="object-contain"
             />
-            <div className="rounded-full bg-[#f1302f] py-3 px-6 flex gap-2">
-              <p className="text-base text-[#0d0d0d] font-semibold whitespace-nowrap">
-                NFT 구매
-              </p>
-              <Image
-                src="/arrow-right.webp"
-                alt="arrow-right"
-                width={12}
-                height={12}
-                className="object-contain"
-              />
-            </div>
+            <Button>NFT 구매하기</Button>
           </div>
         </nav>
       </Container>
