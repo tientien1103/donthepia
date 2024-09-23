@@ -114,9 +114,19 @@ export default function Header() {
                   </li>
                 );
               })}
+              <div className="flex lg:hidden gap-4 2xl:gap-8 mt-8">
+                <Image
+                  src="/home/ic-languages.webp"
+                  alt="ic-language"
+                  width={27}
+                  height={27}
+                  className="object-contain"
+                />
+                <Button>NFT 구매하기</Button>
+              </div>
             </ul>
           </div>
-          <div className="flex gap-2 md:gap-3 2xl:gap-8">
+          <div className="lg:flex hidden gap-2 md:gap-3 2xl:gap-8">
             <Image
               src="/home/ic-languages.webp"
               alt="ic-language"
