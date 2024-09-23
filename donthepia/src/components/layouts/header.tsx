@@ -118,7 +118,7 @@ export default function Header() {
           </div>
           <div className="flex gap-2 md:gap-3 2xl:gap-8">
             <Image
-              src="/ic-language.webp"
+              src="/home/ic-languages.webp"
               alt="ic-language"
               width={27}
               height={27}
