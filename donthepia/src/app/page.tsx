@@ -117,13 +117,13 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-[url(/home/img-map.webp)] bg-contain h-[1080px] bg-no-repeat bg-top px-10">
+      <section className="bg-[url(/home/img-map.webp)] bg-contain lg:h-[1080px] h-[800px] bg-no-repeat bg-top px-10">
         <Container className="relative flex flex-col gap-24 2xl:gap-[200px]">
           <h3 className="text-white 2xl:text-6xl 2xl:leading-[80px] text-3xl text-center pt-8 lg:pt-16">
             Join the community to <br /> get even more benefits.
           </h3>
 
-          <div className="space-y-2 flex flex-col lg:justify-end lg:items-end justify-center items-center">
+          <div className="lg:flex hidden space-y-2 flex-col lg:justify-end lg:items-end justify-center items-center">
             {SOCIAL_ICON_ARR.map((icon) => (
               <Image
                 key={icon}
@@ -173,7 +173,7 @@ export default function Home() {
         <Container className="grid grid-cols-2">
           <div className="col-span-2">
             <div className="flex flex-col gap-10 2xl:justify-end 2xl:items-end justify-center items-center 2xl:mr-52">
-              <h3 className="text-white text-6xl leading-[80px] 2xl:text-start text-center">
+              <h3 className="text-white lg:text-6xl lg:leading-[80px] text-5xl 2xl:text-start text-center">
                 About the antipathy of <br />
                 DONQ NFT Nodes
               </h3>
@@ -203,7 +203,7 @@ export default function Home() {
       <section className="lg:pb-52 pb-96">
         <Container className="relative">
           <div className="flex flex-col gap-10 2xl:justify-start 2xl:items-start justify-center items-center lg:ml-10">
-            <h3 className="text-white text-6xl leading-[80px] 2xl:text-start text-center">
+            <h3 className="text-white lg:text-6xl lg:leading-[80px] text-5xl 2xl:text-start text-center">
               What is an <br />
               Eco-System DONQ?
             </h3>
@@ -305,7 +305,7 @@ export default function Home() {
       <section className="pb-32">
         <div className="container max-w-screen-2xl">
           <div>
-            <h3 className="text-[64px] leading-[80px] text-white text-center pt-32 pb-20">
+            <h3 className="lg:text-[64px] lg:leading-[80px] text-5xl text-white text-center pt-32 pb-20">
               DONQ Token Information
             </h3>
 
