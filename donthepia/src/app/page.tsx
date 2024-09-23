@@ -74,7 +74,7 @@ export default function Home() {
         <Container>
           <div className="grid 3xl:grid-cols-4 grid-cols-9 space-y-28 2xl:space-x-3">
             <div className="3xl:col-span-2 2xl:col-span-4 col-span-9 2xl:max-w-[839px] lg:ml-10">
-              <h3 className="text-white 3xl:text-[64px] 2xl:text-5xl text-2xl 2xl:leading-[80px] 2xl:text-start text-center">
+              <h3 className="text-white 3xl:text-[64px] 2xl:text-5xl text-3xl 2xl:leading-[80px] 2xl:text-start text-center">
                 A digital adventure with Donthepia, The beginning <br /> of a
                 decentralized art <br /> That connects the world.
               </h3>
@@ -119,7 +119,7 @@ export default function Home() {
 
       <section className="bg-[url(/home/img-map.webp)] bg-contain lg:h-[1080px] h-[800px] bg-no-repeat bg-top px-10">
         <Container className="relative flex flex-col gap-24 2xl:gap-[200px]">
-          <h3 className="text-white 2xl:text-6xl 2xl:leading-[80px] text-3xl text-center pt-8 lg:pt-16">
+          <h3 className="text-white 2xl:text-6xl 2xl:leading-[80px] text-4xl text-center pt-8 lg:pt-16">
             Join the community to <br /> get even more benefits.
           </h3>
 
