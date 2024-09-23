@@ -1,6 +1,11 @@
 import clsx from "clsx";
 
-const Menu = ({ isOpen, onChangeMobileMenu }) => {
+interface MenuProps {
+  isOpen: boolean;
+  onChangeMobileMenu: () => void;
+}
+
+const Menu = ({ isOpen, onChangeMobileMenu }: MenuProps) => {
   return (
     <button
       onClick={onChangeMobileMenu}
