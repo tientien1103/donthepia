@@ -41,7 +41,7 @@ function Carousel() {
     : true;
   return (
     <>
-      <div className="flex gap-2 py-20 pl-12">
+      <div className="flex items-center justify-center lg:justify-start lg:items-start gap-2 py-20 lg:pl-12">
         <button
           onClick={handlePrev}
           disabled={isDisabledPrev}
@@ -83,14 +83,14 @@ function Carousel() {
           <div
             key={`member ${index + 1}`}
             className={clsx(
-              "bg-[#232323] py-11 px-10 rounded-xl space-y-[75px] w-[500px] h-[280px] snap-start -translate-x-16"
+              "bg-[#232323] py-11 lg:px-10 px-2 rounded-xl space-y-10 lg:space-y-[75px] lg:w-[500px] lg:h-[280px] w-full snap-start lg:-translate-x-16"
               // {
               //   "mt-7": member.avatar === "avatar2",
               //   "mt-[92px]": member.avatar === "avatar3",
               // }
             )}
           >
-            <p className="text-base text-white">
+            <p className="lg:text-base text-sm text-white">
               T2E Trading 은 코인 거래차트에 대한 교육, 트레이더들의 <br />
               노하우나 투자기법에 대한 교육, 디지털 자산에 대한 전문적인
               <br /> 지식에 대한 교육 상품입니다.

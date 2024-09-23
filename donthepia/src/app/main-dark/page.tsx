@@ -10,12 +10,12 @@ function MainDarkv2() {
   return (
     <main className="min-h-screen bg-black w-full">
       <section className="pt-36 pb-28">
-        <Container className="flex justify-between">
-          <div className="space-y-10 pl-12">
-            <h3 className="text-[64px] leading-[80px] text-white">
+        <Container className="flex lg:flex-row flex-col justify-between">
+          <div className="space-y-10 lg:pl-12">
+            <h3 className="2xl:text-[64px] 2xl:leading-[80px] lg:text-5xl text-white">
               Roadmap for <br /> DONQ NFT Nodes
             </h3>
-            <p className="text-xl text-[#a1a1a1] max-w-[571px]">
+            <p className="2xl:text-xl text-lg text-[#a1a1a1] max-w-[571px]">
               DONQ는 NFT와 T2E Trading , P2E Game을 결합하여 어떠한 거래에
               대해서도 중앙 기관이나 제3자에 의한 허가가 필요 없는 DAO 조직을
               형성하여 유저들이 자율적으로 판단하고 투표하여 생태계를 이끌고
@@ -27,14 +27,15 @@ function MainDarkv2() {
             alt="img-loadmap"
             width={860}
             height={748}
+            className="2xl:w-[860px] 2xl:h-[748px] lg:w-[560px] h-[448px] w-full object-contain"
           />
         </Container>
       </section>
 
-      <section className="pt-36 pb-44">
+      <section className="lg:pt-36 lg:pb-44 pt-0 pb-0">
         <Container>
-          <div className="flex justify-end pr-32">
-            <h3 className="text-[64px] leading-[80px] text-white">
+          <div className="flex justify-center 2xl:justify-end 2xl:pr-32">
+            <h3 className="lg:text-[64px] text-5xl leading-[80px] text-white 2xl:text-start text-center">
               Team & Advisers for <br /> DONQ NFT Nodes
             </h3>
           </div>
@@ -42,9 +43,9 @@ function MainDarkv2() {
         </Container>
       </section>
 
-      <section className="py-[300px] w-full">
-        <Container className="overflow-hidden">
-          <div className="flex gap-24 w-[1920px]">
+      <section className="lg:py-[300px] py-[100px] w-full">
+        <Container className="lg:overflow-hidden">
+          <div className="flex flex-col justify-center items-center lg:flex-row gap-24 lg:w-[1920px] w-full">
             {PARTNER_LIST.map((partner, index) => (
               <div key={`partner ${index + 1}`}>
                 <Image
@@ -62,11 +63,11 @@ function MainDarkv2() {
 
       <section className="py-36">
         <Container className="grid grid-cols-2">
-          <h3 className="text-[64px] leading-[80px] text-white ml-11">
+          <h3 className="lg:text-[64px] lg:leading-[80px] text-5xl text-white ml-11 lg:col-span-1 col-span-2">
             If you have questions, <br />
             see our FAQ
           </h3>
-          <div className="mt-60 space-y-12">
+          <div className="lg:mt-60 mt-32 space-y-12 lg:col-span-1 col-span-2">
             {FAQ_LIST.map((ques, index) => (
               <div key={`FAQ ${index + 1}`} className="flex justify-between">
                 <div className="flex gap-9">
@@ -83,7 +84,7 @@ function MainDarkv2() {
                   alt={ques.icon}
                   width={24}
                   height={24}
-                  className="object-contain"
+                  className="object-contain lg:self-center self-start"
                 />
               </div>
             ))}
@@ -92,9 +93,9 @@ function MainDarkv2() {
       </section>
 
       <section className="bg-[#232323]">
-        <Container className="relative py-[300px]">
+        <Container className="relative lg:py-[300px] py-[150px]">
           <div>
-            <h1 className="text-[129px] leading-[144px] text-white text-center uppercase mb-[50px]">
+            <h1 className="lg:text-[129px] text-6xl leading-[144px] text-white text-center uppercase mb-[50px]">
               Donthepia
             </h1>
             <p className="text-xl text-[#878787] mb-[80px] text-center">
@@ -111,32 +112,34 @@ function MainDarkv2() {
             alt="img-bottom-01"
             width={253}
             height={253}
-            className="object-contain absolute top-0 left-[260px]"
+            className="object-contain hidden lg:block absolute top-0 left-[260px]"
           />
           <Image
             src="/main-dark/img-bottom-02.webp"
             alt="img-bottom-02"
             width={461}
             height={259}
-            className="object-contain absolute top-[500px] -left-52"
+            className="object-contain hidden lg:block absolute top-[500px] -left-52"
           />
           <Image
             src="/main-dark/img-bottom-03.webp"
             alt="img-bottom-03"
             width={348}
             height={348}
-            className="object-contain absolute top-[400px] right-[250px]"
+            className="object-contain hidden lg:block absolute top-[400px] 2xl:right-[250px] right-0 2xl:w-[348px] 2xl:h-[348px] w-[300px] h-[300px]"
           />
         </Container>
       </section>
 
-      <footer className="bg-[#232323] pb-12 px-12">
-        <div className="flex justify-between items-end">
-          <div className="flex gap-[264px]">
-            <p className="text-base text-white">
+      <footer className="bg-[#232323] pb-12 lg:px-12 px-6">
+        <div className="flex lg:flex-row flex-col gap-10 lg:gap-0 justify-between lg:items-end items-center">
+          <div className="flex lg:flex-row flex-col lg:gap-[264px] gap-10">
+            <p className="lg:text-base text-sm text-white whitespace-nowrap">
               COPYRIGHT 2024. DONTHEPIA INC. ALL RIGHTS RESERVED.
             </p>
-            <p className="text-base text-white">MAIL@DONTHEPIA.COM</p>
+            <p className="lg:text-base text-sm text-white">
+              MAIL@DONTHEPIA.COM
+            </p>
           </div>
 
           <div className="flex space-x-4">
