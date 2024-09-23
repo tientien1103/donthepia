@@ -269,7 +269,7 @@ export default function Home() {
       </section>
 
       <section className="lg:pt-40 pb-36 pt-80">
-        <Container className="max-w-screen-2xl">
+        <div className="container max-w-screen-2xl">
           <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start">
             <div>
               <h3 className="2xl:text-[100px] lg:text-7xl text-3xl text-white leading-[50px] lg:leading-[100px] lg:text-start text-center">
@@ -299,11 +299,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
 
       <section className="pb-32">
-        <Container className="max-w-screen-2xl">
+        <div className="container max-w-screen-2xl">
           <div>
             <h3 className="text-[64px] leading-[80px] text-white text-center pt-32 pb-20">
               DONQ Token Information
@@ -378,7 +378,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
     </main>
   );
