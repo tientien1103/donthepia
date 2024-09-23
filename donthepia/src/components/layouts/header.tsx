@@ -64,7 +64,7 @@ export default function Header() {
           className="flex items-center justify-between py-6"
           aria-label="Global"
         >
-          <Link className="hidden md:block" href="/">
+          <Link className="hidden 2xl:block" href="/">
             <Image
               loading="eager"
               priority
@@ -79,7 +79,7 @@ export default function Header() {
             isOpen={mobileMenuOpen}
             onChangeMobileMenu={onChangeMobileMenu}
           />
-          <Link className="block md:hidden" href="/">
+          <Link className="block 2xl:hidden" href="/">
             <Image
               loading="eager"
               priority
@@ -92,7 +92,7 @@ export default function Header() {
           <div className="flex">
             <ul
               className={clsx(
-                "hidden items-center md:gap-x-4 lg:gap-x-16 whitespace-nowrap text-white md:static md:flex md:h-auto md:flex-row md:bg-transparent md:px-0 md:pt-0",
+                "hidden items-center lg:gap-x-4 2xl:gap-x-16 whitespace-nowrap text-white md:static md:flex md:h-auto md:flex-row md:bg-transparent md:px-0 md:pt-0",
                 {
                   "absolute left-0 right-0 top-[54px] !flex h-screen flex-col bg-black px-4 pt-4":
                     mobileMenuOpen,
@@ -103,7 +103,7 @@ export default function Header() {
                 return (
                   <li
                     className={clsx(
-                      "relative w-full whitespace-nowrap border-b border-b-white py-2.5 text-sm text-left uppercase md:border-none md:py-0 md:uppercase md:underline-offset-[7px] after:md:absolute after:md:-bottom-0.5 after:md:left-0 after:md:h-0.5 after:md:w-0 after:md:bg-white after:md:transition-all after:md:duration-300 after:md:hover:w-full",
+                      "relative w-full whitespace-nowrap border-b border-b-white py-2.5 text-xs 2xl:text-sm text-left uppercase md:border-none md:py-0 md:uppercase md:underline-offset-[7px] after:md:absolute after:md:-bottom-0.5 after:md:left-0 after:md:h-0.5 after:md:w-0 after:md:bg-white after:md:transition-all after:md:duration-300 after:md:hover:w-full",
                       {
                         "md:underline": pathname === item.href,
                       }
@@ -116,7 +116,7 @@ export default function Header() {
               })}
             </ul>
           </div>
-          <div className="flex gap-2 md:gap-8">
+          <div className="flex gap-2 md:gap-3 2xl:gap-8">
             <Image
               src="/ic-language.webp"
               alt="ic-language"
